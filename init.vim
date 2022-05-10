@@ -11,7 +11,7 @@ set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set laststatus=2            " display status line
 set ruler
-set encoding=UTF-8          " the encoding displayed
+set encoding=utf-8          " the encoding displayed
 set autoindent              " indent a new line the same amount as the line just typed
 set backspace=indent,eol,start " make backspace like other programs
 set number                  " add line numbers
@@ -31,11 +31,11 @@ set noswapfile            " disable creating swap file
 imap <C-c> <Esc> 
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
+nmap <silent> <leader>d :bp\|bd #<CR>
+set termguicolors
+
+
+let g:python3_host_prog = 'E:\Users\ipala\anaconda3\python'
 
 " trailing whitespaces
 "highlight ExtraWhitespace ctermbg=red guibg=red
@@ -53,3 +53,4 @@ source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
 source ~/AppData/Local/nvim/lua/vim-iluminate.lua
+

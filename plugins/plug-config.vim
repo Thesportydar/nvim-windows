@@ -12,8 +12,9 @@ let g:indent_blankline_show_current_context = v:true
 
 
 " airline
-let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='onedark'
+"let g:airline_theme='synthwave84'
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
@@ -35,3 +36,6 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>" Find files using Telescope command-line sugar.
+
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"

@@ -26,7 +26,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'preservim/nerdcommenter'
 
  "nvim-polyglot
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
 " web-devicons
 Plug 'kyazdani42/nvim-web-devicons' " lua
@@ -48,4 +48,27 @@ Plug 'RRethy/vim-illuminate'
 
 " ale
 Plug 'dense-analysis/ale'
+
+" copilot
+"Plug 'github/copilot.vim'
+
+" synthwave84
+"Plug 'artanikin/vim-synthwave84'
+
+" vim airlines themes
+Plug 'vim-airline/vim-airline-themes'
+
+" nvim ultisnips
+Plug 'SirVer/ultisnips'
+
+" nvim snippets
+Plug 'honza/vim-snippets'
+
+" YouCompleteMe
+Plug 'ycm-core/YouCompleteMe'
+
+" copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
+

@@ -12,21 +12,15 @@ Plug 'preservim/nerdtree'
 "Indent blankline
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-" nvim-treesitter
+"nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " telescope
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
-" lsp-config
-Plug 'neovim/nvim-lspconfig'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
 
 " NERDcommenter
 Plug 'preservim/nerdcommenter'
-
- "nvim-polyglot
-"Plug 'sheerun/vim-polyglot'
 
 " web-devicons
 Plug 'kyazdani42/nvim-web-devicons' " lua
@@ -44,19 +38,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'frazrepo/vim-rainbow'
 
 " vim-iluminate
-Plug 'RRethy/vim-illuminate'
+"Plug 'RRethy/vim-illuminate'
 
-" ale
-Plug 'dense-analysis/ale'
-
-" copilot
-"Plug 'github/copilot.vim'
-
-" synthwave84
-"Plug 'artanikin/vim-synthwave84'
-
-" vim airlines themes
-Plug 'vim-airline/vim-airline-themes'
+ "vim airlines themes
+"Plug 'vim-airline/vim-airline-themes'
 
 " nvim ultisnips
 Plug 'SirVer/ultisnips'
@@ -64,11 +49,16 @@ Plug 'SirVer/ultisnips'
 " nvim snippets
 Plug 'honza/vim-snippets'
 
-" YouCompleteMe
-Plug 'ycm-core/YouCompleteMe'
+ "YouCompleteMe
+"Plug 'ycm-core/YouCompleteMe'
 
 " copilot
 Plug 'github/copilot.vim'
 
-call plug#end()
+" coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" omnisharp
+Plug 'OmniSharp/omnisharp-vim'
+
+call plug#end()

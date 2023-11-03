@@ -22,11 +22,12 @@ set wildmode=longest,list   " get bash-like tab completions
 set cc=80                  " set an 80 column border for good coding style
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
-set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 set showcmd                 " shows command history
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
+set listchars=trail:•,space:·,eol:↵,tab:->,nbsp:n,extends:?,precedes:?
+set list
 set noswapfile            " disable creating swap file
 imap <C-c> <Esc> 
 xnoremap K :move '<-2<CR>gv-gv
@@ -34,8 +35,7 @@ xnoremap J :move '>+1<CR>gv-gv
 nmap <silent> <leader>d :bp\|bd #<CR>
 set termguicolors
 
-
-let g:python3_host_prog = 'E:\Users\ipala\anaconda3\python'
+let g:python3_host_prog = 'E:\anaconda3\python'
 
 " trailing whitespaces
 "highlight ExtraWhitespace ctermbg=red guibg=red
@@ -52,5 +52,5 @@ let g:python3_host_prog = 'E:\Users\ipala\anaconda3\python'
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/plugins/plugins.vim
 source ~/AppData/Local/nvim/themes/onedark.vim
-source ~/AppData/Local/nvim/lua/vim-iluminate.lua
+"source ~/AppData/Local/nvim/lua/vim-iluminate.lua
 

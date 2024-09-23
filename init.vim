@@ -34,23 +34,10 @@ xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 nmap <silent> <leader>d :bp\|bd #<CR>
 set termguicolors
-
-let g:python3_host_prog = 'E:\anaconda3\python'
-
-" trailing whitespaces
-"highlight ExtraWhitespace ctermbg=red guibg=red
-"match ExtraWhitespace /\s\+$/
-"au BufWinEnter * match ExtraWhitespace /\s\+$/
-"au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-"au InsertLeave * match ExtraWhitespace /\s\+$/
-"au BufWinLeave * call clearmatches()
-
-" set spell                  enable spell check (may need to download language package)
-" set backupdir=~/.cache/vim  Directory to store backup files.
-
+let g:python3_host_prog = 'C:\Users\inaqu\anaconda3\python'
 "---------------------------------- sources ------------------------------------
 source ~/AppData/Local/nvim/plugins/plug-config.vim
 source ~/AppData/Local/nvim/plugins/plugins.vim
-source ~/AppData/Local/nvim/themes/onedark.vim
-"source ~/AppData/Local/nvim/lua/vim-iluminate.lua
-
+colorscheme tokyonight
+lua require('treesitter-config')
+lua require('gitsigns').setup();
